@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: hsl(207, 26%, 17%);
+}
+ /* header */
+#WorldAnddarkMode{
+  display: flex;
+  color: whitesmoke;
+  background-color:  hsl(209, 23%, 22%);
+  position: sticky;
+  padding: 20px;
+}
+
+
+/* main section to api? */
+#mainSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 80px;
+  gap: 0px;
+}
+.imgOfcountry{
+  width: 100%;
+  height: 50%;
+  border-radius: 3px 3px 0px 0px;
+}
+.card {
+  background-color:  hsl(209, 23%, 22%);
+  margin-bottom: 60px;
+color: whitesmoke;
+  width: 70%;
+  height: 80%;
+  border-radius: 3px;
+}
+.other{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+padding: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(239, 241, 241);
+  color: rgb(3, 3, 3);
+  font-size: 15px;
+  background-color: rgb(244, 242, 250);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  color: blue;
+}
+
+
+
+
+
+
+
+
