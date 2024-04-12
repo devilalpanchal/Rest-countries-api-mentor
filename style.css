@@ -11,14 +11,107 @@ body{
   background-color: hsl(207, 26%, 17%);
 }
  /* header */
+ #header{
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+
+}
+
+
 #WorldAnddarkMode{
   display: flex;
   color: whitesmoke;
+  gap: 75.9%;
   background-color:  hsl(209, 23%, 22%);
-  position: sticky;
   padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.paraWorld{
+  font-weight: 500;
+
+}
+.SVGion{
+  border: 1px solid whitesmoke;
+}
+.filterIcon{
+  width: 20px;
+  transform: rotate(270deg);
+  width: 20px;
+margin-top: -10px;
+}
+.moonandDarkmode{
+  display: flex;
+  gap: 5px;
+  font-weight: 400;
+}
+.moonIcon{
+  width: 30px;
+  height: 25px;
+  margin-top: -2px;
+}
+#inputFilter{
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 46.4%;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
+#inputFilter>input{
+border-radius: 3px;
+  width: 36%;
+  height: 42px;
+  padding: 16px;
+  font-size: 18px;
+  background-color:  hsl(209, 23%, 22%);
+border: none;
+color: whitesmoke;
+}
+.filterIconandtext{
+border-radius: 3px;
+  display: flex;
+  gap: 20px;
+  background-color:  hsl(209, 23%, 22%);
+align-items: center;
+padding: 10px 20px 10px 20px;
+font-size: 16px;
+font-weight: 500;
+}
+.filterIconandtext>p{
+color: whitesmoke;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  hsl(209, 23%, 22%);
+  width: 199px;
+  z-index: 5;
+  right: 90px;
+  top: 140px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.dropdown-content h3 {
+  color: rgb(173, 173, 173);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+.dropdown-content h3:hover {
+  color: rgb(255, 255, 255);
+  background-color: #504f4f;
+}
+
+.filterIconandtext:hover .dropdown-content {
+  display: block;
+}
 
 /* main section to api? */
 #mainSection{

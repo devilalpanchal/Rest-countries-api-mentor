@@ -27,3 +27,9 @@ fetch('https://restcountries.com/v3.1/all')
     }).catch((err) => {
         console.log('Eroor');
     })
+
+    // to drop dwon
+    let dropdown = document.querySelector('dropdown-content')
+    document.querySelector("filterIcon").addEventListener('click',()=>{
+dropdown.classList.toggle()
+    })

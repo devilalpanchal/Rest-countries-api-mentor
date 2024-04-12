@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rest-countries-api</title>
     <!-- link family
      -->
@@ -12,35 +13,50 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css link -->
     
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="WorldAnddarkMode">
-      <p>Where in the world</p>
-      <div>
-        <p></p>
-        <p>Dark Mode</p>
-      </div>
+    <!-- header -->
+<section id="header">
+  <div id="WorldAnddarkMode">
+    <p class="paraWorld">Where in the world?</p>
+    <div class="moonandDarkmode">
+      <img class="moonIcon" src="moon-outline.svg" alt="">
+      <p>Dark Mode</p>
     </div>
-    <div id="inputFilter">
-      <input type="text" placeholder="Search for a country" />
-      <div>
-        <p>Filter by Region</p>
-        <p>logo</p>
-      </div>
-    </div>
+  </div>
 
+  <div id="inputFilter">
+    <input type="text" placeholder="Search for a country" />
+    <div class="filterIconandtext">
+      <p>Filter by Region</p>
+      <i class="fa-solid fa-angle-left filterIcon" style="color: #ffffff;"></i>
+      <div class="dropdown-content">
+        <h3>Africa</h3>
+        <h3>America</h3>
+        <h3>Asia</h3>
+        <h3>Europe</h3>
+        <h3>Oceania</h3>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+   
     <!-- main-section -->
 
     <section id="mainSection"></section>
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
+    
+       Coded by
       <a href="https://www.frontendmentor.io/profile/devilalpanchal"
         >Developer Devid</a
       >.
