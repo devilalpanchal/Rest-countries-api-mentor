@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rest-countries-api</title>
     <!-- link family
      -->
@@ -14,55 +13,63 @@
       rel="stylesheet"
     />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- css link -->
-    
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./cssFile/style.css" />
   </head>
   <body>
+    <!-- <section class="mainContianer">
+
+    </section> -->
     <!-- header -->
-<section id="header">
-  <div id="WorldAnddarkMode">
-    <p class="paraWorld">Where in the world?</p>
-    <div class="moonandDarkmode">
-      <img class="moonIcon" src="moon-outline.svg" alt="">
-      <p>Dark Mode</p>
-    </div>
-  </div>
+    <section id="header">
+      <div class="WorldAnddarkMode" >
+        <p class="paraWorld">Where in the world?</p>
+        <div class="moonandDarkmode">
+          <i id="" class="fa-regular fa-sun suntheme hide"></i>
 
-  <div id="inputFilter">
-    <input type="text" placeholder="Search for a country" />
-    <div class="filterIconandtext">
-      <p>Filter by Region</p>
-      <i class="fa-solid fa-angle-left filterIcon" style="color: #ffffff;"></i>
-      <div class="dropdown-content">
-        <h3>Africa</h3>
-        <h3>America</h3>
-        <h3>Asia</h3>
-        <h3>Europe</h3>
-        <h3>Oceania</h3>
-        
+          <img id="darktheme" class="moonIcon" src="moon-outline.svg" alt="" />
+          <p>Dark Mode</p>
+        </div>
       </div>
-    </div>
-  </div>
 
-</section>
+      <div class="inputFilter">
+        <input id="input" type="text" placeholder="Search for a country" />
+        <div class="filterIconandtext">
+          <p>Filter by Region</p>
+          <i
+            class="fa-solid fa-angle-left filterIcon"
+            style="color: #ffffff"
+          ></i>
+          <div class="dropdown-content hide">
+            <h3 id="africa">Africa</h3>
+            <h3 id="america">America</h3>
+            <h3 id="asia">Asia</h3>
+            <h3 id="europe">Europe</h3>
+            <h3 id="oceania">Oceania</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-   
     <!-- main-section -->
 
     <section id="mainSection"></section>
     <div class="attribution">
-    
-       Coded by
-      <a href="https://www.frontendmentor.io/profile/devilalpanchal"
-        >Developer Devid</a
-      >.
+      Coded by
+      <a href="#">Developer Devid</a>
     </div>
 
     <!-- add to functionality -->
-    <script src="index.js"></script>
+    <script src="./jsFile/index.js"></script>
+    <script src="./jsFile/filterContinent.js"></script>
+    <script src="./jsFile/theme.js"></script>
   </body>
 </html>
