@@ -65,7 +65,7 @@ america.addEventListener('click', () => {
 const Asia = document.getElementById('asia')
 Asia.addEventListener('click', () => {
     function filterContinent() {
-        fetch('https://restcountries.com/v3.1/region/europe')
+        fetch('https://restcountries.com/v3.1/region/asia')
             .then((Response) => Response.json()
             )
             .then((data) => {
