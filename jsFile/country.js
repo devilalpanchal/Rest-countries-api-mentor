@@ -1,6 +1,6 @@
 const root = document.querySelector('.root')
-function fetchCountry1() {
-    fetch( `https://restcountries.com/v3.1/name/india`)
+function fetchCountry1(name) {
+    fetch( `https://restcountries.com/v3.1/name/china`)
         .then(response => response.json())
         .then(data => {
             allcountriesData = data;
