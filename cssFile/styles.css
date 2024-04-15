@@ -7,7 +7,7 @@
     width: 40%;
 }
 .backBtn{
-    border:1px solid blue ;
+    border:1px solid rgb(156, 156, 170) ;
     width: 100px;
     margin-left: 80px;
     text-align: center ;
@@ -43,7 +43,6 @@ a i ,p {
     display: flex;
     gap: 40px   ;
     flex-direction: column;
-    border: 1px solid white ;
     padding: 20px;
     color: white;
 }
@@ -64,4 +63,10 @@ a i ,p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.BorderCountries{
+    color: white;
+}
+.name{
+    font-size: 20px;
 }

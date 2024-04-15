@@ -3,26 +3,21 @@
 const darkAndlight =document.querySelector('.moonandDarkmode')
 const suntheme =document.querySelector('.suntheme')
 const cardmain =document.querySelector('.cardmain')
-console.log(cardmain);
+// console.log(cardmain);
 const moonIcontheme =document.querySelector('.moonIcon')
-console.log(suntheme);
+// console.log(suntheme);
 darkAndlight.addEventListener('click',()=>{
     document.body.classList.toggle('theme')
     suntheme.classList.toggle('hide')
     moonIcontheme.classList.toggle('hide')
-    // cardmain.classList.remove('card')
-    // cardmain.classList.add('cardtheme')
     localStorage.setItem('themeMode', 'light');
 })
 
 // to drop dwon
 const filterIconandtext =document.querySelector('.filterIconandtext')
-console.log(filterIconandtext);
 const dropdown = document.querySelector('.dropdown-content')
-console.log(dropdown);
 
 filterIconandtext.addEventListener('click',()=>{
-    console.log(dropdown)
 dropdown.classList.toggle("show")
 dropdown.classList.toggle("hide")
 })

@@ -16897,3 +16897,19 @@ function displayCountries(countries) {
     });
     mainSection.innerHTML = result.join("");
 }
+
+// to ahead page
+let mainSection = document.getElementById('mainSection');
+mainSection.addEventListener('click', event => {
+    // Check if the clicked element has the class "card"
+    if (event.target.classList.contains('card')) {
+      location.href = "http://127.0.0.1:5500/country.html";
+        console.log('Card clicked!');
+        // Redirect to another page
+        // let  name = item.name.comman
+        console.log(name);
+fetchCountry1(name);
+
+
+    }
+});
