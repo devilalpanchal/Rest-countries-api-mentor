@@ -4,22 +4,24 @@
     height: 300px;
 }
 .backBtn1{
-    border:1px solid rgb(156, 156, 170) ;
-    width: 100px;
+    width: 125px;
     margin-left: 80px;
     text-align: center ;
     padding: 15px;
-    background-color: #fff;
+    background-color: #2b3743;
     margin-top: 50px;
 }
-#backBtn{
+
+.backBtn{
     font-size: 20px;
     color: black;
     display: flex;
-    gap: 5px;
+    gap: 20px;
     align-items: center;
     border: none;
+    color: white;
 }
+
 a i ,p {
     border:none;
     }
@@ -41,6 +43,7 @@ a i ,p {
     flex-direction: column;
     padding: 10px;
     color: white;
+    margin-top: 20px;
 }
 .otherInfo{
     display: flex;
@@ -68,4 +71,14 @@ a i ,p {
 }
 .otherpage{
     margin-bottom: 90px;
+}
+
+.othertheme{
+    color: black;
+    background-color: #ffffff;
+}
+.otherthemespecial{
+     background-color:black; 
+    color: black;
+
 }

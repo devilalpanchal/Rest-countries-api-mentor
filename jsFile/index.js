@@ -1,5 +1,5 @@
 const url = "https://restcountries.com/v3.1/all";
-const input = document.getElementById('input');
+const input = document.querySelector('.input');
 const mainSection = document.getElementById('mainSection');
 const mainSection1 = document.querySelector('.hello');
 const otherpage = document.querySelector('.otherpage');

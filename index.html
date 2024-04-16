@@ -15,17 +15,16 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- css link -->
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 
+  <!-- css link -->
   <link rel="stylesheet" href="./cssFile/styles.css" />
   <link rel="stylesheet" href="./cssFile/style.css" />
+  <link rel="stylesheet" href="./cssFile/querry.css">
 </head>
 
 <body>
-  <!-- <section class="mainContianer">
 
-    </section> -->
   <!-- header -->
   <section id="header">
     <div class="WorldAnddarkMode">
@@ -39,9 +38,9 @@
     </div>
     <div class="heaerRomoveotherpage">
       <div class="inputFilter">
-        <input id="input" type="text" placeholder="Search for a country" />
+        <input class="input" type="text" placeholder="Search for a country" />
         <div class="filterIconandtext">
-          <p>Filter by Region</p>
+          <p class="filterpp">Filter by Region</p>
           <i class="fa-solid fa-angle-left filterIcon" style="color: #ffffff"></i>
           <div class="dropdown-content hide">
             <h3 id="africa">Africa</h3>
@@ -65,7 +64,7 @@
   <section class="otherpage hide">
     <div class="backBtn1">
       <a>
-        <i id="backBtn" class="fa-solid fa-arrow-left">
+        <i class="fa-solid fa-arrow-left backBtn">
           <p class="backText">Back</p>
         </i>
       </a>
@@ -125,7 +124,7 @@
             </div>
           </div>
 
-          <div class="flex">
+          <div class="flex border">
             <p>Borders:</p>
             <p class="flex">
             <p class="BorderCountries1"></p> &nbsp;
@@ -137,10 +136,6 @@
       </div>
     </div>
   </section>
-
-
-
-
   <div class="attribution">
     Coded by
     <a href="#">Developer Devid</a>
@@ -150,7 +145,6 @@
   <script src="./jsFile/index.js"></script>
   <script src="./jsFile/filterContinent.js"></script>
   <script src="./jsFile/theme.js"></script>
-  <!-- <script src="./jsFile/country.js"></script> -->
 </body>
 
 </html>
