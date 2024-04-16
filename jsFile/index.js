@@ -126,8 +126,15 @@ function fetchCountry1() {
         })
         // fetchCountry1()
         .catch(err => {
+            function loade() {
+                mainSection.innerHTML = ` <div class="loader">
+
+            </div>`
+            }
+            
             console.log('Error:', err);
         });
+        loade()
 }
 fetchCountry1()
     // location.href = "http://127.0.0.1:5500/country.html";
