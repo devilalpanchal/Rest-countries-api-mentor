@@ -1,6 +1,6 @@
-const root = document.querySelector('.root')
-function fetchCountry1(name) {
-    fetch( `https://restcountries.com/v3.1/name/china`)
+const root = document.querySelector('.root1')
+function fetchCountry1() {
+    fetch( `https://restcountries.com/v3.1/name/india`)
         .then(response => response.json())
         .then(data => {
             allcountriesData = data;
@@ -39,17 +39,17 @@ function fetchCountry1(name) {
                     }
                 }
 
-                let imgOfcountry = document.querySelector('.imgOfcountry')
-                let countryName = document.querySelector('.countryName')
-                let NativeName = document.querySelector('.countryNativeName')
-                let Population = document.querySelector('.population')
-                let region = document.querySelector('.region')
-                let Subregion = document.querySelector('.Subregion')
-                let capital = document.querySelector('.capital')
-                let Domain = document.querySelector('.Domain')
-                let Currencies = document.querySelector('.Currencies')
-                let Languages = document.querySelector('.Languages')
-                let BorderCountries = document.querySelector('.BorderCountries')
+                let imgOfcountry = document.querySelector('.imgOfcountry1')
+                let countryName = document.querySelector('.countryName1')
+                let NativeName = document.querySelector('.countryNativeName1')
+                let Population = document.querySelector('.population1')
+                let region = document.querySelector('.region1')
+                let Subregion = document.querySelector('.Subregion1')
+                let capital = document.querySelector('.capital1')
+                let Domain = document.querySelector('.Domain1')
+                let Currencies = document.querySelector('.Currencies1')
+                let Languages = document.querySelector('.Languages1')
+                let BorderCountries = document.querySelector('.BorderCountries1')
                 imgOfcountry.src = item.flags.png
                 countryName.innerHTML = item.name.common
                 NativeName.innerHTML = commonName
@@ -70,9 +70,10 @@ function fetchCountry1(name) {
 
 fetchCountry1();
 // to back button
-const backbtn = document.querySelector('.backBtn')
+const backbtn = document.querySelector('.backBtn1')
 backbtn.addEventListener('click', () => {
     location.href = "https://tinyurl.com/y647j53t";
+    
 
 })
 

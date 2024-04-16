@@ -1,19 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.imgOfcountry1{
+    width: 37%;
+    height: 300px;
 }
-.imgOfcountry{
-    width: 40%;
-}
-.backBtn{
+.backBtn1{
     border:1px solid rgb(156, 156, 170) ;
     width: 100px;
     margin-left: 80px;
     text-align: center ;
     padding: 15px;
     background-color: #fff;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 #backBtn{
     font-size: 20px;
@@ -30,25 +27,24 @@ a i ,p {
     font-size: 15px;
     border: none;
 }
-.root{
+.root1{
     margin-top: 50px;
     margin-left: 80px;
 }
 .card1{
     display: flex;
     gap: 100px;
-    width: 90%;
 }
-.other{
+.other1{
     display: flex;
-    gap: 40px   ;
+    gap: 20px   ;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     color: white;
 }
 .otherInfo{
     display: flex;
-    gap: 100px;
+    gap: 40px;
 }
 .flex{
     display: flex;
@@ -64,9 +60,12 @@ a i ,p {
     flex-direction: column;
     gap: 10px;
 }
-.BorderCountries{
+.BorderCountries1{
     color: white;
 }
 .name{
     font-size: 20px;
+}
+.otherpage{
+    margin-bottom: 90px;
 }

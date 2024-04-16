@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rest-countries-api</title>
-    <!-- link family
-     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css link -->
 
-    <link rel="stylesheet" href="./cssFile/style.css" />
-  </head>
-  <body>
-    <!-- <section class="mainContianer">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rest-countries-api</title>
+  <!-- link family
+     -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css link -->
+
+  <link rel="stylesheet" href="./cssFile/styles.css" />
+  <link rel="stylesheet" href="./cssFile/style.css" />
+</head>
+
+<body>
+  <!-- <section class="mainContianer">
 
     </section> -->
-    <!-- header -->
-    <section id="header">
-      <div class="WorldAnddarkMode" >
-        <p class="paraWorld">Where in the world?</p>
-        <div class="moonandDarkmode">
-          <i id="" class="fa-regular fa-sun suntheme hide"></i>
+  <!-- header -->
+  <section id="header">
+    <div class="WorldAnddarkMode">
+      <p class="paraWorld">Where in the world?</p>
+      <div class="moonandDarkmode">
+        <i id="" class="fa-regular fa-sun suntheme hide"></i>
 
-          <img id="darktheme" class="moonIcon" src="moon-outline.svg" alt="" />
-          <p>Dark Mode</p>
-        </div>
+        <img id="darktheme" class="moonIcon" src="moon-outline.svg" alt="" />
+        <p>Dark Mode</p>
       </div>
-
+    </div>
+    <div class="heaerRomoveotherpage">
       <div class="inputFilter">
         <input id="input" type="text" placeholder="Search for a country" />
         <div class="filterIconandtext">
           <p>Filter by Region</p>
-          <i
-            class="fa-solid fa-angle-left filterIcon"
-            style="color: #ffffff"
-          ></i>
+          <i class="fa-solid fa-angle-left filterIcon" style="color: #ffffff"></i>
           <div class="dropdown-content hide">
             <h3 id="africa">Africa</h3>
             <h3 id="america">America</h3>
@@ -57,22 +52,105 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- main-section -->
-
-    <section id="mainSection">
-      
-    </section>
-    <div class="attribution">
-      Coded by
-      <a href="#">Developer Devid</a>
     </div>
+  </section>
 
-    <!-- add to functionality -->
-    <script src="./jsFile/index.js"></script>
-    <script src="./jsFile/filterContinent.js"></script>
-    <script src="./jsFile/theme.js"></script>
-    <script src="./jsFile/country.js"></script>
-  </body>
+  <!-- main-section -->
+  <section class="hello">
+    <section id="mainSection">
+
+    </section>
+  </section>
+
+  <section class="otherpage hide">
+    <div class="backBtn1">
+      <a>
+        <i id="backBtn" class="fa-solid fa-arrow-left">
+          <p class="backText">Back</p>
+        </i>
+      </a>
+    </div>
+    <div class="root1">
+      <div class="card1">
+        <img class="imgOfcountry1" src="${item.flags.png}" alt="" />
+        <div class="other1">
+          <div class="name">
+            <h3 class="countryName1"></h3>
+          </div>
+          <div class="otherInfo">
+            <div class="firstSite">
+              <div class="flex">
+                <p>
+                  Native Name :
+                </p>
+                <p class="countryNativeName1"> </p>
+              </div>
+
+              <div class="flex">
+                <p>Population:</p>
+                <p class="population1"></p>
+              </div>
+
+              <div class="flex">
+                <p>Region:</p>
+                <p class="region1"></p>
+              </div>
+
+              <div class="flex">
+                <p>Sub-Region:</p>
+                <p class="Subregion1"></p>
+              </div>
+
+              <div class="flex">
+                <p>Capital:</p>
+                <p class="capital1"></p>
+              </div>
+            </div>
+
+            <div class="SecondSite">
+              <div class="flex">
+                <p>Top-Level-Domain:</p>
+                <p class="Domain1"></p>
+
+              </div>
+              <div class="flex">
+                <p>Currencies:</p>
+                <p class="Currencies1"></p>
+              </div>
+
+              <div class="flex">
+                <p>Language:</p>
+                <p class="Languages1"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <p>Borders:</p>
+            <p class="flex">
+            <p class="BorderCountries1"></p> &nbsp;
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="attribution">
+    Coded by
+    <a href="#">Developer Devid</a>
+  </div>
+
+  <!-- add to functionality -->
+  <script src="./jsFile/index.js"></script>
+  <script src="./jsFile/filterContinent.js"></script>
+  <script src="./jsFile/theme.js"></script>
+  <!-- <script src="./jsFile/country.js"></script> -->
+</body>
+
 </html>

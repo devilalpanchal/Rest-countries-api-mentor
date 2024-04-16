@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body{
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -39,7 +40,6 @@ body{
 }
 .paraWorld{
   font-weight: 500;
-
 }
 .SVGion{
   border: 1px solid whitesmoke;
